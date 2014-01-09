@@ -24,4 +24,6 @@ $(function() {
     }
   });
 
+  // compare the two results
+
 });
