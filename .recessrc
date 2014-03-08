@@ -1,0 +1,12 @@
+{
+    "noSummary": false,
+    "stripColors": false,
+    "noIDs": true,
+    "noJSPrefix": false,
+    "noOverqualifying": true,
+    "noUnderscores": true,
+    "noUniversalSelectors": true,
+    "prefixWhitespace": true,
+    "strictPropertyOrder": true,
+    "zeroUnits": true
+}
