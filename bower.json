@@ -1,0 +1,8 @@
+{
+  "name": "Santa_Commands_It",
+  "version": "0.0.1",
+  "main": "live/css/master.css",
+  "dependencies": {
+    "jam": "https://github.com/wylie/jam.git"
+  }
+}
