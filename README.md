@@ -21,7 +21,8 @@ $ grunt start
 ```
 
 The first command will install all the needed packages, like [Grunt](http://gruntjs.com).
-The second command will install other site dependencies like my version of [Recess](https://github.com/wylie/recess.git) and any [Bower](http://bower.io) dependencies.
+
+The second command will install other site dependencies like my version of [Recess](https://github.com/wylie/recess.git) as well as any [Bower](http://bower.io) dependencies. Then it will do an initial build for you.
 
 After that you can run this command to start a server:
 ```shell

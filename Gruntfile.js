@@ -62,7 +62,8 @@ module.exports = function(grunt) {
 				command: [
 					'npm install git+https://github.com/wylie/recess.git -g',
 					'bower install',
-					'grunt build'
+					'grunt build',
+					'grunt server'
 				].join('&&')
 			},
 			check: {
