@@ -3,7 +3,7 @@
 
 Tell Santa what you want for Christmas
 
-## Getting Started
+## Quick Start
 
 First you will need to clone this repo
 
