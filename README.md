@@ -24,9 +24,8 @@ The first command will install all the needed packages, like [Grunt](http://grun
 
 The second command will install other site dependencies like my version of [Recess](https://github.com/wylie/recess.git) as well as any [Bower](http://bower.io) dependencies. Then it will do an initial build for you.
 
-After that you can run this command to start a server:
-```shell
-$ grunt server
-```
+The server will be on port 3000. You can open another browser window and type in the address, or you can just click [here](http://localhost:3000).
 
-That will start a local server on port 3000. You can open another browser window to get there, or just click [here](http://localhost:3000).
+After all that you are free to develop as you need to. I would open another command line window in which to do all your dirty work.
+
+**Enjoy!**
