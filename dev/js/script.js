@@ -14,7 +14,16 @@ $(function() {
         var val = val.replace(/[^a-zA-Z 0-9]+/g,'');
         var val = val.split(' ');
 
-        var badWords = ['ass','asshole','shit','shithead'];
+        var badWords = [
+            'ass',
+            'asshole',
+            'dead',
+            'fuck',
+            'fucking',
+            'kill',
+            'shit',
+            'shithead'
+        ];
 
         $('.log').text();
 
