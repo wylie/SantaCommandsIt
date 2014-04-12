@@ -16,8 +16,7 @@ Then you have to install [Node.js](http://nodejs.org) if it already isn't instal
 After node is installed you have two more commands to run
 
 ```shell
-$ npm install
-$ grunt start
+$ ./start
 ```
 
 The first command will install all the needed packages, like [Grunt](http://gruntjs.com).
