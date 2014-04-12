@@ -58,14 +58,6 @@ module.exports = function(grunt) {
 					'npm install git+https://github.com/wylie/recess.git -g'
 				]
 			},
-			startup: {
-				command: [
-					'npm install git+https://github.com/wylie/recess.git -g',
-					'bower install',
-					'grunt build',
-					'grunt server'
-				].join('&&')
-			},
 			check: {
 				command: 'recess dist/css/master.min.css',
 				options: {
@@ -103,10 +95,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-
-	grunt.registerTask('start', [
-		'shell:startup',
-	]);
 
 	grunt.registerTask('build', [
 		'sass:dist',
