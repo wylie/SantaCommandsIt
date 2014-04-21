@@ -53,21 +53,50 @@ module.exports = function(grunt) {
 		},
 
 		shell: {
-			recess: {
+			start: {
+				command: './start.sh',
+				options: {
+					stdout: true,
+					stderr: true,
+					failOnError: true
+				}
+			},
+			clean: {
 				command: [
-					'npm install git+https://github.com/wylie/recess.git -g'
-				]
+	                'rm -rf node_modules dist',
+	                'npm cache clean',
+	                'npm install',
+	                'bower install',
+	                'grunt build'
+	            ].join('&&'),
+				options: {
+					stdout: true,
+					stderr: true,
+					failOnError: true
+				}
+			},
+			recess: {
+				command: 'npm install git+https://github.com/wylie/recess.git -g',
+				options: {
+					stdout: true,
+					stderr: true,
+					failOnError: true
+				}
 			},
 			check: {
 				command: 'recess dist/css/master.min.css',
 				options: {
-					stdout: true
+					stdout: true,
+					stderr: true,
+					failOnError: true
 				}
 			},
 			removecss: {
 				command: 'rm dev/scss/*.css',
 				options: {
-					stdout: true
+					stdout: true,
+					stderr: true,
+					failOnError: true
 				}
 			}
 		},
@@ -95,6 +124,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.registerTask('start', [
+		'shell:start'
+	]);
+
+	grunt.registerTask('clean', [
+		'shell:clean'
+	]);
 
 	grunt.registerTask('build', [
 		'sass:dist',
