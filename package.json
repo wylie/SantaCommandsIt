@@ -19,6 +19,7 @@
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "~0.5.2",
     "grunt-express": "~0.3.6",
-    "grunt-shell": "^0.6.4"
+    "grunt-shell": "^0.6.4",
+    "grunt-wrap": "^0.3.0"
   }
 }

@@ -4,5 +4,8 @@
   "main": "live/css/master.css",
   "dependencies": {
     "jam": "https://github.com/wylie/jam.git"
+  },
+  "devDependencies": {
+    "jam": "git+https://github.com/wylie/jam.git"
   }
 }

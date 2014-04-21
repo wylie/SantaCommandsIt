@@ -65,6 +65,7 @@ module.exports = function(grunt) {
 				command: [
 	                'rm -rf node_modules dist',
 	                'npm cache clean',
+	                'bower cache clean',
 	                'npm install',
 	                'bower install',
 	                'grunt build'
@@ -104,7 +105,7 @@ module.exports = function(grunt) {
 		watch: {
 			scss: {
 				files: ['dev/scss/*.scss'],
-				tasks: ['sass:dev', 'shell']
+				tasks: ['sass']
 			},
 			js: {
 				files: ['dev/js/*.js'],
@@ -112,7 +113,7 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files: ['dev/*.html'],
-				tasks: ['htmlmin:dev']
+				tasks: ['htmlmin']
 			}
 		}
 
@@ -124,6 +125,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.registerTask('wrap', [
+		'wrap:advanced'
+	]);
 
 	grunt.registerTask('start', [
 		'shell:start'
@@ -137,14 +142,14 @@ module.exports = function(grunt) {
 		'sass:dist',
 		'shell:check',
 		'uglify',
-		'htmlmin:dist'
+		'htmlmin'
 	]);
 
 	grunt.registerTask('dist', [
 		'sass:dist',
 		'shell',
 		'uglify:dist',
-		'htmlmin:dist'
+		'htmlmin'
 	]);
 
 	grunt.registerTask('server', [
