@@ -5,7 +5,7 @@ $(function() {
             $('.result').removeClass('naughty').addClass('naughty').text('You are naughty!');
         }
         if ( bad === false ) {
-            $('.result').removeClass('naughty').addClass('nice').text('Yes, it will be!');
+            $('.result').removeClass('naughty').addClass('nice').text('Santa Commands It!');
         }
     }
 
