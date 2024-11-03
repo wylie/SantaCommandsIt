@@ -1,8 +1,0 @@
-# DIRECTORIES
-node_modules
-vendor
-.sass-cache
-dist
-
-# FILES
-.DS_Store
