@@ -1,38 +1,38 @@
-.App {
+@font-face {
+  font-family: 'Christmas Card';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Christmas Card'),
+    local('Christmas Card'),
+    url(./assets/Christmas_Card.otf) format('opentype'),
+    url(./assets/Christmas_Card.ttf) format('truetype'),
+    url(./assets/Christmas_Card.woff) format('woff'),
+    url(./assets/Christmas_Card.woff2) format('woff2');
+}
+
+* {
+  background-color: #f9f6e3;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  container-type: inline-size;
+  container-name: app;
+}
+
+h1 {
+  font-family: 'Christmas Card';
+  font-size: 12vw;
+  margin: 1rem auto 0;
+  text-shadow: #dad5a8 -3px 3px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@container app (min-width: 500px) {
+  h1 {
+    font-size: 60px;
   }
 }

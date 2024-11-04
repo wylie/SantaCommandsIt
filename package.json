@@ -1,5 +1,6 @@
 {
-  "name": "sci",
+  "name": "santacommandsit",
+  "homepage": "https://wylie.github.io/sci",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
