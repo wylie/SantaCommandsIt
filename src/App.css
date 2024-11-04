@@ -1,5 +1,5 @@
 :root {
-  
+  --max-width: 500px;
 }
 
 @font-face {
@@ -14,14 +14,15 @@
     url(./assets/Christmas_Card.woff2) format('woff2');
 }
 
-* {
+html,
+body {
   background-color: #f9f6e3;
 }
 
 .app {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: var(--max-width);
   margin: auto;
   container-type: inline-size;
   container-name: app;
