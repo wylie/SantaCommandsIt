@@ -2,6 +2,8 @@
   --max-width: 500px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Space+Mono:wght@400;700&display=swap');
+
 @font-face {
   font-family: 'Christmas Card';
   font-style: normal;
@@ -21,11 +23,74 @@ body {
 
 .app {
   display: flex;
-  flex-direction: column;
-  max-width: var(--max-width);
   margin: auto;
   container-type: inline-size;
   container-name: app;
+}
+.app.main {
+  max-width: var(--max-width);
+  flex-direction: column;
+}
+.app.flag {
+  max-width: 800px;
+  margin-top: 1rem;
+}
+.app.flag .chats  {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.app.flag .chat  {
+  padding: 1.25rem;
+  border-radius: 10px; 
+  position: relative;
+  width: fit-content;
+  margin: 0 20px 1rem;
+  max-width: 350px;
+}
+.app.flag .chat.santa  {
+  background-color: #bbb;
+  align-self: flex-start;
+}
+.app.flag .chat.user  {
+  color: white;
+  background-color: #0b76f9;
+  align-self: flex-end;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  letter-spacing: 2.5px;
+}
+.app.flag .chat::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom: 0;
+}
+.app.flag .santa.chat::after {
+  left: 0;
+  border-left-color: #bbb;
+  border-left-width: 20px;
+  border-left-style: solid;
+  margin-left: -12px;
+  transform: rotate(45deg);
+}
+.app.flag .user.chat::after {
+  right: 0;
+  border-right-color: #0b76f9;
+  border-right-width: 20px;
+  border-right-style: solid;
+  margin-right: -12px;
+  transform: rotate(-45deg);
+}
+.app.flag img {
+  width: 100%;
+  max-width: 400px;
 }
 
 h1 {
