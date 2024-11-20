@@ -46,12 +46,17 @@ body {
   border-radius: 10px; 
   position: relative;
   width: fit-content;
-  margin: 0 20px 1rem;
+  margin: 0 0 1rem;
   max-width: 350px;
 }
 .app.flag .chat.santa  {
+  font-family: 'Christmas Card';
+  font-size: 6vw;
+  text-shadow: #8c8b8b -3px 3px 0;
+  font-weight: bold;
   background-color: #bbb;
   align-self: flex-start;
+  margin-right: 1rem;
 }
 .app.flag .chat.user  {
   color: white;
@@ -62,8 +67,26 @@ body {
   font-style: normal;
   font-size: 1.25rem;
   letter-spacing: 2.5px;
+  margin-left: 1rem;
 }
-.app.flag .chat::after {
+.app.flag .chat input {
+  border: 0;
+  outline: 0;
+  color: white;
+  font-family: "Pangolin", cursive;
+  background-color: transparent;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  letter-spacing: 2.5px;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  width: fit-content;
+  margin-left: 5px;
+}
+.app.flag .chat input::placeholder {
+  color: rgba(255,255,255,.25);
+}
+/* .app.flag .chat::after {
   content: '';
   position: absolute;
   bottom: 10px;
@@ -87,7 +110,7 @@ body {
   border-right-style: solid;
   margin-right: -12px;
   transform: rotate(-45deg);
-}
+} */
 .app.flag img {
   width: 100%;
   max-width: 400px;
@@ -99,6 +122,7 @@ h1 {
   margin: 1rem auto 0;
   text-shadow: #dad5a8 -3px 3px 0;
   text-align: center;
+  display: none;
 }
 
 @container app (min-width: 500px) {
