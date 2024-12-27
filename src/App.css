@@ -20,28 +20,30 @@ html,
 body {
   background-color: #f9f6e3;
 }
-
 .app {
   display: flex;
-  margin: auto;
-  container-type: inline-size;
-  container-name: app;
+  flex-direction: column;
+  align-items: center;
 }
-.app.main {
+.top {
+  display: flex;
+  margin: auto;
+}
+.main {
   max-width: var(--max-width);
   flex-direction: column;
 }
-.app.flag {
+.flag {
   max-width: 800px;
   margin-top: 1rem;
 }
-.app.flag .chats  {
+.flag .chats  {
   min-width: 400px;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
-.app.flag .chat  {
+.flag .chat  {
   padding: 1.25rem;
   border-radius: 10px; 
   position: relative;
@@ -49,16 +51,16 @@ body {
   margin: 0 0 1rem;
   max-width: 350px;
 }
-.app.flag .chat.santa  {
+.flag .chat.santa  {
   font-family: 'Christmas Card';
-  font-size: 4rem;
+  font-size: 3.75rem;
   text-shadow: #8c8b8b -3px 3px 0;
   font-weight: bold;
   background-color: #bbb;
   align-self: flex-start;
   margin-right: 1rem;
 }
-.app.flag .chat.user  {
+.flag .chat.user  {
   color: white;
   background-color: #0b76f9;
   align-self: flex-end;
@@ -69,7 +71,7 @@ body {
   letter-spacing: 2.5px;
   margin-left: 1rem;
 }
-.app.flag .chat input {
+.flag .chat input {
   border: 0;
   outline: 0;
   color: white;
@@ -83,10 +85,10 @@ body {
   width: fit-content;
   margin-left: 5px;
 }
-.app.flag .chat input::placeholder {
+.flag .chat input::placeholder {
   color: rgba(255,255,255,.25);
 }
-.app.flag img {
+.flag img {
   width: 100%;
   max-width: 400px;
 }
