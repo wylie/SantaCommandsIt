@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+
 import './App.css';
 import Santa from "./assets/santa.png";
 import featureFlags from './config';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    // Set focus on the input element after the component renders
+    inputRef.current.focus();
+  }, []);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -19,23 +26,28 @@ function App() {
   return (
     <>
       {featureFlags.redesign ? (
-        <div className="app flag">
-          <div className="img">
-            <img src={Santa} alt="Santa" />
+        <div>
+          <div className="app flag">
+            <div className="img">
+              <img src={Santa} alt="Santa" />
+            </div>
+            <div className="chats">
+              <p className="chat santa">
+                Ho Ho Ho!
+                Whataya want?
+              </p>
+              <p id="input" style={{display: "none"}} className="chat user"></p>
+            </div>
           </div>
-          <div className="chats">
-            <p className="chat santa">Ho Ho Ho!</p>
-            <p className="chat santa">Whataya want?</p>
-            <p className="chat user">
-              I'd like 
-              <input 
-                type="text" 
-                placeholder="type what you want" 
-                value={inputValue}
-                onChange={handleInputChange}
-                onKeyPress={handleKeyPress}
-              />
-            </p>
+          <div className="user-input" style={{position: "relative", bottom: "-50px"}}>
+            <input
+              type="text"
+              ref={inputRef}
+              value={inputValue}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyPress}
+              placeholder="Tell Santa what you want!"
+            />
           </div>
         </div>
       ) : (

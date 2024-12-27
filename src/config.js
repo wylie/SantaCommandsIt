@@ -1,6 +1,6 @@
 // config.js
 const featureFlags = {
-  redesign: false,
+  redesign: true,
   anotherFeature: false,
 };
 
