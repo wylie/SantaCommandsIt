@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SantaCommandsIt/static/css/main.19f4a3fb.css",
-    "main.js": "/SantaCommandsIt/static/js/main.ecfe6861.js",
+    "main.css": "/SantaCommandsIt/static/css/main.04ae81b0.css",
+    "main.js": "/SantaCommandsIt/static/js/main.98580db8.js",
     "static/js/453.04ff378b.chunk.js": "/SantaCommandsIt/static/js/453.04ff378b.chunk.js",
     "static/media/santa.png": "/SantaCommandsIt/static/media/santa.4895bcbb39426f982803.png",
     "static/media/Christmas_Card.otf": "/SantaCommandsIt/static/media/Christmas_Card.68c47801660db58a059a.otf",
@@ -9,12 +9,12 @@
     "static/media/Christmas_Card.woff": "/SantaCommandsIt/static/media/Christmas_Card.9d2c115df87454047d5d.woff",
     "static/media/Christmas_Card.woff2": "/SantaCommandsIt/static/media/Christmas_Card.66fd2fe960e771061f83.woff2",
     "index.html": "/SantaCommandsIt/index.html",
-    "main.19f4a3fb.css.map": "/SantaCommandsIt/static/css/main.19f4a3fb.css.map",
-    "main.ecfe6861.js.map": "/SantaCommandsIt/static/js/main.ecfe6861.js.map",
+    "main.04ae81b0.css.map": "/SantaCommandsIt/static/css/main.04ae81b0.css.map",
+    "main.98580db8.js.map": "/SantaCommandsIt/static/js/main.98580db8.js.map",
     "453.04ff378b.chunk.js.map": "/SantaCommandsIt/static/js/453.04ff378b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19f4a3fb.css",
-    "static/js/main.ecfe6861.js"
+    "static/css/main.04ae81b0.css",
+    "static/js/main.98580db8.js"
   ]
 }
